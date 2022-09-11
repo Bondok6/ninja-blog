@@ -1,8 +1,10 @@
-![](https://img.shields.io/badge/Microverse-blueviolet)
-
 # Ninja Blog App
 
 > Simple Blog App from [React Ninja Tutorial](https://www.youtube.com/playlist?list=PL4cUxeGkcC9gZD-Tvwfod2gaISzfRiP9d) for practicing some features such as custom hook and abort-controller, etc...
+
+
+https://user-images.githubusercontent.com/45231276/189546556-a86a94d2-dc5f-4470-b431-cbc3a7327912.mp4
+
 
 ## Built With
 - React.js
