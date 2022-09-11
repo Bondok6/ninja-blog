@@ -15,16 +15,16 @@
 To get a local copy up and running follow these simple example steps.
 
 ```bash
-$ git clone git@github.com:Bondok6/react-typescript-todo.git
-$ cd react-typescript-todo
+git clone git@github.com:Bondok6/react-typescript-todo.git
+cd react-typescript-todo
 ```
 
 To run the project / josn-server.
 
 ```bash
-$ npm install
-$ npx json-server --watch data/db.json --port 8000
-$ npm start
+npm install
+npx json-server --watch data/db.json --port 8000
+npm start
 ```
 
 
