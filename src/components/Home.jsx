@@ -1,12 +1,18 @@
-import { useState } from 'react';
+import useFetch from '../custom-hook/useFetch';
+import BlogList from './BlogList';
 
 const Home = () => {
-  const [name, setName] = useState('bondok');
+  const {
+    data: blogs,
+    isPending,
+    error,
+  } = useFetch('http://localhost:8000/blogs');
 
   return (
     <div className="home">
-      <h2>{name}</h2>
-      <button onClick={() => setName('kyrillos')}>Click Me</button>
+      {error && <div>{error}</div>}
+      {isPending && <div>Loading...</div>}
+      {blogs && <BlogList blogs={blogs} />}
     </div>
   );
 };
