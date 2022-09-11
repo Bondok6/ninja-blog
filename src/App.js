@@ -9,7 +9,6 @@ const App = () => (
   <BrowserRouter>
     <div className="App">
       <Navbar />
-
       <div className="content">
         <Routes>
           <Route path="/" element={<Home />} />

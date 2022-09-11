@@ -94,6 +94,7 @@
   border: 1px solid #ddd;
   box-sizing: border-box;
   display: block;
+  resize: vertical;
 }
 .create button {
   background: #f1356d;
@@ -102,4 +103,9 @@
   padding: 8px;
   border-radius: 8px;
   cursor: pointer;
+}
+.loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

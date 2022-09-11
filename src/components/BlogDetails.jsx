@@ -1,5 +1,6 @@
 import { useParams, useNavigate } from 'react-router-dom';
 import useFetch from './../custom-hook/useFetch';
+import Loading from './../custom-hook/Loading';
 
 const BlogDetails = () => {
   const { id } = useParams();
@@ -21,7 +22,7 @@ const BlogDetails = () => {
 
   return (
     <div className="blog-details">
-      {isPending && <div>Loading...</div>}
+      {isPending && <Loading />}
       {error && <div>{error}</div>}
       {blog && (
         <article>

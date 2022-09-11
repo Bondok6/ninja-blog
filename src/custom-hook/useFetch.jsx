@@ -8,13 +8,13 @@ const useFetch = (url) => {
   useEffect(() => {
     // Abort controller: to prevent memory leaks when component unmounts before fetch completes (see useEffect cleanup function)
     const abortCont = new AbortController();
+    const { signal } = abortCont;
 
     setTimeout(() => {
-      fetch(url, { signal: abortCont.signal })
+      fetch(url, { signal })
         .then((res) => {
           if (!res.ok)
             throw Error('could not fetch the data for that resource');
-
           return res.json();
         })
         .then((data) => {

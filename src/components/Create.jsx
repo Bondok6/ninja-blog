@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
+import Loading from '../custom-hook/Loading';
 
 const Create = () => {
   const [title, setTitle] = useState('');
@@ -48,11 +49,7 @@ const Create = () => {
           <option value="yoshi">Yoshi</option>
         </select>
         {!isPending && <button type="submit">Add Blog</button>}
-        {isPending && (
-          <button type="submit" disabled>
-            Adding Blog...
-          </button>
-        )}
+        {isPending && <Loading />}
       </form>
     </div>
   );
