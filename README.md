@@ -2,13 +2,12 @@
 
 # Ninja Blog App
 
-> The Blog app from [React Ninja Tutorial](https://www.youtube.com/playlist?list=PL4cUxeGkcC9gZD-Tvwfod2gaISzfRiP9d) for practicing some features such as custom hook and abort-controller, etc...
+> Simple Blog App from [React Ninja Tutorial](https://www.youtube.com/playlist?list=PL4cUxeGkcC9gZD-Tvwfod2gaISzfRiP9d) for practicing some features such as custom hook and abort-controller, etc...
 
 ## Built With
 - React.js
 - Json-server
 - CSS
-
 
 ## Getting Started
 
@@ -27,7 +26,6 @@ npx json-server --watch data/db.json --port 8000
 npm start
 ```
 
-
 ## Authors
 
 👤 **Kyrillos Hany**
@@ -45,4 +43,3 @@ Feel free to check the [issues page](../../issues/).
 ## Show your support
 
 Give a ⭐️ if you like this project!
-
